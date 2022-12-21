@@ -7,5 +7,5 @@ On va intégrer une petite maquette en HTML/CSS avec un peu de JS...
 Pour Sass, il ne faudra pas oublier de compiler son fichier .scss :
 
 ```
-sass scss/style.scss css/style --watch
+sass scss/style.scss css/style.css --watch
 ```
