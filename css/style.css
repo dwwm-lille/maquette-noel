@@ -108,6 +108,9 @@ img {
 }
 
 /* Giving section */
+.giving {
+  /* @todo: hover */
+}
 .giving > .flex {
   column-gap: 128px;
   justify-content: center;
@@ -140,6 +143,43 @@ img {
 }
 .celebrate img {
   width: 450px;
+}
+
+/* Gift section */
+.gift {
+  /* @todo: hover and fix content */
+}
+.gift > .flex {
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 680px;
+  margin: auto;
+}
+.gift .card {
+  width: 200px;
+  box-shadow: 0 4px 16px rgba(48, 29, 30, 0.1019607843);
+  border-radius: 12px;
+  padding: 32px 24px 24px 24px;
+  position: relative;
+}
+.gift .card img {
+  width: 120px;
+  margin-bottom: 16px;
+}
+.gift .card .icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #dc3845;
+}
+.gift .card .price {
+  font-size: 20px;
+}
+.gift .card-title {
+  font-size: 14px;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
