@@ -1,0 +1,23 @@
+/* Home section */
+.home {
+    padding-top: 48px;
+
+    > .flex.container {
+        align-items: center;
+        column-gap: 16px;
+    }
+
+    img {
+        width: 500px;
+    }
+
+    .title {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+}
