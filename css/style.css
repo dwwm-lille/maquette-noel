@@ -27,6 +27,11 @@ img {
   max-width: 100%;
 }
 
+input {
+  font-family: inherit;
+  font-size: 16px;
+}
+
 button {
   border: 0;
   cursor: pointer;
@@ -226,6 +231,33 @@ button {
 }
 .new .card button .icon {
   font-size: 20px;
+}
+
+/* Message component */
+.message > .flex {
+  background-color: #dc3845;
+  padding: 56px 0;
+  border-radius: 20px;
+  justify-content: center;
+  column-gap: 64px;
+  align-items: center;
+}
+.message .title {
+  font-size: 36px;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.message input {
+  border-radius: 48px;
+  border: 0;
+  outline: 0;
+  padding: 16px 24px;
+  width: 280px;
+}
+.message img {
+  width: 320px;
+  transform: rotate(15deg);
 }
 
 /*# sourceMappingURL=style.css.map */
