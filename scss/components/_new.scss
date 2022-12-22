@@ -1,0 +1,50 @@
+/* New section */
+.new {
+    > .flex {
+        gap: 80px;
+        flex-wrap: wrap;
+        max-width: 850px;
+        margin: auto;
+    }
+
+    .card {
+        width: 230px;
+        box-shadow: 0 4px 16px #301d1e1a;
+        border-radius: 12px;
+        text-align: center;
+        padding: 16px 16px 24px 16px;
+        position: relative;
+        overflow: hidden;
+
+        .overlay {
+            width: 250px;
+            height: 250px;
+            background-color: $firstColor;
+            border-radius: 50%;
+            position: absolute;
+            top: -80px;
+            left: -10px;
+        }
+
+        img {
+            width: 150px;
+            margin-bottom: 32px;
+            position: relative;
+        }
+
+        .price {
+            font-size: 20px;
+        }
+
+        .title {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        button {
+            .icon {
+                font-size: 20px;
+            }
+        }
+    }
+}
