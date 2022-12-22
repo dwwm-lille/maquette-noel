@@ -1,0 +1,19 @@
+/* Celebrate section */
+.celebrate {
+    > .flex {
+        align-items: center;
+    }
+
+    .title {
+        margin-bottom: 24px;
+        text-align: left;
+    }
+
+    .description {
+        margin-bottom: 40px;
+    }
+
+    img {
+        width: 450px;
+    }
+}
