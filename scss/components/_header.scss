@@ -1,0 +1,42 @@
+/* Header */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 48px;
+    height: 80px;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+        color: $titleColor;
+        font-weight: 500;
+
+        img {
+            width: 24px;
+        }
+    }
+
+    .menu {
+        display: flex;
+        column-gap: 48px;
+        margin-left: auto;
+
+        a {
+            color: $titleColor;
+            font-weight: 500;
+            transition: 0.5s;
+
+            &.active, &:hover {
+                color: $firstColor;
+            }
+        }
+    }
+
+    .theme {
+        display: flex;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
