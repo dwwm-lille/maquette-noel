@@ -39,7 +39,7 @@ button {
 
 /* Reusable css classes */
 .container {
-  max-width: 970px;
+  max-width: 968px;
   margin: auto;
 }
 
@@ -289,7 +289,10 @@ button {
 }
 
 /* Footer */
-footer > .flex {
+footer {
+  overflow: hidden;
+}
+footer > .container > .flex {
   justify-content: space-between;
   position: relative;
 }
@@ -366,6 +369,11 @@ footer .img2 {
   background-color: #941a24;
 }
 
+@media (max-width: 968px) {
+  .container {
+    margin: auto 15px;
+  }
+}
 /* Scroll */
 .scrollup {
   position: fixed;

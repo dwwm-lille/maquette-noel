@@ -11,3 +11,9 @@
         background-color: darken($color, 20%);
     }
 }
+
+@mixin mobile {
+    @media (max-width: 968px) {
+        @content;
+    }
+}
