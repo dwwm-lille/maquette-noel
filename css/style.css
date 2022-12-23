@@ -377,6 +377,22 @@ footer .img2 {
   background-color: #941a24;
 }
 
+/* Scroll */
+.scrollup {
+  position: fixed;
+  bottom: 48px;
+  right: 48px;
+  box-shadow: 0 4px 12px rgba(51, 51, 51, 0.1019607843);
+  display: inline-flex;
+  padding: 6px;
+  border-radius: 4px;
+  opacity: 0.8;
+}
+.scrollup i {
+  font-size: 20px;
+  color: #dc3845;
+}
+
 @media (max-width: 968px) {
   .container {
     margin: auto 15px;
@@ -443,9 +459,10 @@ footer .img2 {
   .celebrate > .flex {
     flex-wrap: wrap;
     flex-direction: column;
+    row-gap: 16px;
   }
   .celebrate img {
-    max-width: 320px;
+    width: 280px;
   }
   .celebrate .content {
     text-align: center;
@@ -462,6 +479,7 @@ footer .img2 {
     max-width: 90%;
     justify-content: space-between;
     column-gap: 32px;
+    padding-top: 0;
   }
   .gift .card {
     width: 45%;
@@ -478,21 +496,59 @@ footer .img2 {
     font-size: 12px;
   }
   /* @todo: carousel mobile */
-}
-/* Scroll */
-.scrollup {
-  position: fixed;
-  bottom: 48px;
-  right: 48px;
-  box-shadow: 0 4px 12px rgba(51, 51, 51, 0.1019607843);
-  display: inline-flex;
-  padding: 6px;
-  border-radius: 4px;
-  opacity: 0.8;
-}
-.scrollup i {
-  font-size: 20px;
-  color: #dc3845;
+  .new > .flex {
+    padding-top: 0;
+  }
+  .message > .flex {
+    flex-direction: column;
+    row-gap: 48px;
+    padding: 40px 24px;
+  }
+  .message form {
+    text-align: center;
+    width: 100%;
+  }
+  .message form .title {
+    text-align: center;
+    font-size: 22px;
+  }
+  .message form input {
+    width: 100%;
+  }
+  .message form .button {
+    width: 100%;
+  }
+  .message img {
+    width: 200px;
+  }
+  footer > .container > .flex {
+    flex-direction: column;
+    row-gap: 32px;
+  }
+  footer .description {
+    font-size: 13px;
+  }
+  footer.section .title {
+    font-size: 16px;
+  }
+  footer .copy {
+    margin-top: 56px;
+  }
+  footer .img1, footer .img2 {
+    width: 100px;
+  }
+  footer .img1 {
+    top: 25%;
+    right: 32px;
+    left: initial;
+  }
+  footer .img2 {
+    top: 75%;
+    right: -64px;
+  }
+  .scrollup {
+    right: 24px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
