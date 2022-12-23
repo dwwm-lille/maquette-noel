@@ -21,6 +21,8 @@
     .menu {
         display: flex;
         column-gap: 48px;
+        row-gap: 24px;
+        align-items: center;
         margin-left: auto;
 
         a {
