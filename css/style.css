@@ -27,7 +27,7 @@ img {
   max-width: 100%;
 }
 
-input {
+button, input {
   font-family: inherit;
   font-size: 16px;
 }
@@ -328,6 +328,35 @@ footer .img1 {
 footer .img2 {
   top: 40%;
   right: -112px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #dc3845;
+  color: #fff;
+  padding: 20px 44px;
+  border-radius: 48px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.button:hover {
+  background-color: #941a24;
+}
+
+/* Scroll */
+.scrollup {
+  position: fixed;
+  bottom: 48px;
+  right: 48px;
+  box-shadow: 0 4px 12px rgba(51, 51, 51, 0.1019607843);
+  display: inline-flex;
+  padding: 6px;
+  border-radius: 4px;
+  opacity: 0.8;
+}
+.scrollup i {
+  font-size: 20px;
+  color: #dc3845;
 }
 
 /*# sourceMappingURL=style.css.map */

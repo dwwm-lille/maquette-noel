@@ -1,0 +1,16 @@
+/* Scroll */
+.scrollup {
+    position: fixed;
+    bottom: 48px;
+    right: 48px;
+    box-shadow: 0 4px 12px #3333331a;
+    display: inline-flex;
+    padding: 6px;
+    border-radius: 4px;
+    opacity: 0.8;
+
+    i {
+        font-size: 20px;
+        color: $firstColor;
+    }
+}
