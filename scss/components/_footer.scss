@@ -1,0 +1,79 @@
+/* Footer */
+footer {
+    > .flex {
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        color: $titleColor;
+        column-gap: 4px;
+        margin-bottom: 16px;
+
+        img {
+            width: 24px;
+        }
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    &.section .title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        text-align: left;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+
+        a {
+            color: $textColor;
+            transition: 0.5s;
+
+            &:hover {
+                color: $titleColor;
+            }
+        }
+    }
+
+    .aviables {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+
+        img {
+            width: 100px;
+            cursor: pointer;
+        }
+    }
+
+    .copy {
+        display: block;
+        font-size: 13px;
+        color: #918888;
+        text-align: center;
+        margin: 112px 0 16px 0;
+    }
+
+    .img1, .img2 {
+        position: absolute;
+        width: 120px;
+    }
+
+    .img1 {
+        top: 100%;
+        left: 0;
+    }
+
+    .img2 {
+        top: 40%;
+        right: -112px;
+    }
+}

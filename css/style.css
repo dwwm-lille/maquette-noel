@@ -258,10 +258,76 @@ button {
   outline: 0;
   padding: 16px 24px;
   width: 280px;
+  color: #5d5656;
 }
 .message img {
   width: 320px;
   transform: rotate(15deg);
+}
+
+/* Footer */
+footer > .flex {
+  justify-content: space-between;
+  position: relative;
+}
+footer .logo {
+  display: flex;
+  align-items: center;
+  color: #282525;
+  column-gap: 4px;
+  margin-bottom: 16px;
+}
+footer .logo img {
+  width: 24px;
+}
+footer .description {
+  font-size: 14px;
+}
+footer.section .title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-align: left;
+}
+footer .links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+footer .links a {
+  color: #5d5656;
+  transition: 0.5s;
+}
+footer .links a:hover {
+  color: #282525;
+}
+footer .aviables {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+footer .aviables img {
+  width: 100px;
+  cursor: pointer;
+}
+footer .copy {
+  display: block;
+  font-size: 13px;
+  color: #918888;
+  text-align: center;
+  margin: 112px 0 16px 0;
+}
+footer .img1, footer .img2 {
+  position: absolute;
+  width: 120px;
+}
+footer .img1 {
+  top: 100%;
+  left: 0;
+}
+footer .img2 {
+  top: 40%;
+  right: -112px;
 }
 
 /*# sourceMappingURL=style.css.map */
