@@ -126,6 +126,7 @@ button {
 }
 .giving > .flex {
   column-gap: 128px;
+  row-gap: 40px;
   justify-content: center;
   padding-top: 32px;
 }
@@ -162,7 +163,7 @@ button {
 
 /* Gift section */
 .gift {
-  /* @todo: hover and fix content */
+  /* @todo: hover */
 }
 .gift > .flex {
   gap: 40px;
@@ -177,10 +178,14 @@ button {
   border-radius: 12px;
   padding: 32px 24px 24px 24px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .gift .card img {
   width: 120px;
   margin-bottom: 16px;
+  align-self: center;
 }
 .gift .card .icon {
   position: absolute;
@@ -390,12 +395,21 @@ footer .img2 {
     transition: 0.5s;
     display: none !important;
   }
+  .section {
+    padding: 72px 0 16px 0;
+  }
+  .section .title {
+    font-size: 20px;
+  }
+  .home {
+    padding-top: 12px;
+  }
   .home > .flex {
     flex-wrap: wrap;
     flex-direction: column;
   }
   .home img {
-    max-width: 320px;
+    width: 320px;
   }
   .home .content {
     text-align: center;
@@ -406,6 +420,64 @@ footer .img2 {
   .home .title {
     font-size: 24px;
   }
+  .home .description {
+    padding: 0 32px;
+    font-size: 13px;
+  }
+  .giving > .flex {
+    flex-wrap: wrap;
+    column-gap: 56px;
+    justify-content: space-between;
+    max-width: 85%;
+    margin: auto;
+  }
+  .giving .item {
+    width: 42%;
+  }
+  .giving .item .title {
+    font-size: 16px;
+  }
+  .giving img {
+    width: 100px;
+  }
+  .celebrate > .flex {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .celebrate img {
+    max-width: 320px;
+  }
+  .celebrate .content {
+    text-align: center;
+  }
+  .celebrate .content .title {
+    text-align: center;
+    font-size: 20px;
+  }
+  .celebrate .content .description {
+    font-size: 15px;
+    padding: 0 8px;
+  }
+  .gift > .flex {
+    max-width: 90%;
+    justify-content: space-between;
+    column-gap: 32px;
+  }
+  .gift .card {
+    width: 45%;
+    padding: 24px 16px 16px 16px;
+  }
+  .gift .card img {
+    width: 100px;
+    margin-bottom: 4px;
+  }
+  .gift .card .price {
+    font-size: 16px;
+  }
+  .gift .card-title {
+    font-size: 12px;
+  }
+  /* @todo: carousel mobile */
 }
 /* Scroll */
 .scrollup {
