@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'base';
 @import 'layout';
+@import 'mixin';
 
 @import 'components/header';
 @import 'components/home';
@@ -11,4 +12,5 @@
 @import 'components/message';
 @import 'components/footer';
 
+@import 'components/button';
 @import 'components/scroll';

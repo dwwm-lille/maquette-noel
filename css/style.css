@@ -233,7 +233,16 @@ button {
   font-size: 16px;
   font-weight: 500;
 }
-.new .card button .icon {
+.new .card .button {
+  position: absolute;
+  padding: 8px;
+  bottom: 0;
+  right: 0;
+  border-radius: 4px;
+  border-bottom-right-radius: 12px;
+  display: flex;
+}
+.new .card .button .icon {
   font-size: 20px;
 }
 
@@ -259,6 +268,20 @@ button {
   padding: 16px 24px;
   width: 280px;
   color: #5d5656;
+  display: block;
+  margin-bottom: 16px;
+}
+.message .button {
+  display: inline-block;
+  background-color: #282525;
+  color: #fff;
+  padding: 20px 44px;
+  border-radius: 48px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.message .button:hover {
+  background-color: black;
 }
 .message img {
   width: 320px;

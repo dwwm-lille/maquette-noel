@@ -42,7 +42,15 @@
             font-weight: 500;
         }
 
-        button {
+        .button {
+            position: absolute;
+            padding: 8px;
+            bottom: 0;
+            right: 0;
+            border-radius: 4px;
+            border-bottom-right-radius: 12px;
+            display: flex;
+
             .icon {
                 font-size: 20px;
             }
