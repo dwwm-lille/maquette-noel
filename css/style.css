@@ -82,12 +82,14 @@ header .nav .logo {
 header .nav .logo img {
   width: 24px;
 }
+header .nav .menu {
+  margin-left: auto;
+}
 header .nav .menu ul {
   display: flex;
   column-gap: 48px;
   row-gap: 24px;
   align-items: center;
-  margin-left: auto;
 }
 header .nav .menu ul a {
   color: #282525;
@@ -102,6 +104,7 @@ header .nav .nav-buttons {
   column-gap: 16px;
 }
 header .nav .theme {
+  display: flex;
   font-size: 20px;
   cursor: pointer;
 }
@@ -457,7 +460,10 @@ footer .img2 {
   header .nav .menu.show {
     top: 0;
   }
-  header .nav .menu-toggle, header .nav .menu-close, header .nav .nav-light {
+  header .nav .menu-toggle {
+    display: flex;
+  }
+  header .nav .menu-close, header .nav .nav-light {
     display: block;
   }
   .section {

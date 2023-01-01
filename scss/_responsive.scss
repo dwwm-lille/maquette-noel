@@ -28,7 +28,11 @@
                 }
             }
 
-            .menu-toggle, .menu-close, .nav-light {
+            .menu-toggle {
+                display: flex;
+            }
+
+            .menu-close, .nav-light {
                 display: block;
             }
         }

@@ -22,20 +22,22 @@ header {
             }
         }
     
-        .menu ul {
-            display: flex;
-            column-gap: 48px;
-            row-gap: 24px;
-            align-items: center;
+        .menu {
             margin-left: auto;
-    
-            a {
-                color: $titleColor;
-                font-weight: 500;
-                transition: 0.5s;
-    
-                &.active, &:hover {
-                    color: $firstColor;
+            ul {
+                display: flex;
+                column-gap: 48px;
+                row-gap: 24px;
+                align-items: center;
+        
+                a {
+                    color: $titleColor;
+                    font-weight: 500;
+                    transition: 0.5s;
+        
+                    &.active, &:hover {
+                        color: $firstColor;
+                    }
                 }
             }
         }
@@ -46,6 +48,7 @@ header {
         }
     
         .theme {
+            display: flex;
             font-size: 20px;
             cursor: pointer;
         }
