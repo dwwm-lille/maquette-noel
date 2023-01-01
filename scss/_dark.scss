@@ -1,0 +1,57 @@
+body.dark {
+    background-color: $darkBgColor;
+    color: $darkTextColor;
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $darkTitleColor;
+    }
+
+    header {
+        background-color: rgba($darkBgColor, 0.8);
+
+        nav .logo {
+            color: $darkTitleColor;
+        }
+
+        nav .menu {
+            background-color: #251819;
+        }
+
+        nav .menu ul a {
+            color: $darkTitleColor;
+        }
+
+        &.shadow {
+            box-shadow: 0 2px 4px #0a0a0a4d;
+        }
+    }
+
+    .gift .card {
+        background-color: $darkSemiBgColor;
+    }
+
+    .new .card {
+        background-color: $darkSemiBgColor;
+    }
+
+    .message > .flex {
+        background-color: $darkSemiBgColor;
+    }
+
+    .message input {
+        background-color: $darkBgColor;
+        color: $darkTextColor;
+    }
+
+    .message .button {
+        @include button();
+    }
+
+    footer .logo {
+        color: $darkTitleColor;
+    }
+
+    footer .links a {
+        color: $darkTextColor;
+    }
+}

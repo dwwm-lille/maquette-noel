@@ -28,6 +28,10 @@
                 &.show {
                     top: 0;
                 }
+
+                .dark & {
+                    box-shadow: 0 2px 4px #0a0a0a4d;
+                }
             }
 
             .menu-toggle {

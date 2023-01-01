@@ -64,6 +64,13 @@ button {
 header {
   position: fixed;
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  transition: 0.5s;
+  z-index: 1;
+}
+header.shadow {
+  box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1019607843);
 }
 header .nav {
   display: flex;
@@ -435,9 +442,66 @@ footer .img2 {
   color: #dc3845;
 }
 
+body.dark {
+  background-color: #251819;
+  color: #c2bdbd;
+}
+body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6 {
+  color: #f3f2f2;
+}
+body.dark header {
+  background-color: rgba(37, 24, 25, 0.8);
+}
+body.dark header nav .logo {
+  color: #f3f2f2;
+}
+body.dark header nav .menu {
+  background-color: #251819;
+}
+body.dark header nav .menu ul a {
+  color: #f3f2f2;
+}
+body.dark header.shadow {
+  box-shadow: 0 2px 4px rgba(10, 10, 10, 0.3019607843);
+}
+body.dark .gift .card {
+  background-color: #2f2223;
+}
+body.dark .new .card {
+  background-color: #2f2223;
+}
+body.dark .message > .flex {
+  background-color: #2f2223;
+}
+body.dark .message input {
+  background-color: #251819;
+  color: #c2bdbd;
+}
+body.dark .message .button {
+  display: inline-block;
+  background-color: #dc3845;
+  color: #fff;
+  padding: 20px 44px;
+  border-radius: 48px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+body.dark .message .button:hover {
+  background-color: #941a24;
+}
+body.dark footer .logo {
+  color: #f3f2f2;
+}
+body.dark footer .links a {
+  color: #c2bdbd;
+}
+
 @media (max-width: 968px) {
   .container {
     margin: auto 15px;
+  }
+  header {
+    backdrop-filter: unset;
   }
   header .nav {
     height: 56px;
@@ -459,6 +523,9 @@ footer .img2 {
   }
   header .nav .menu.show {
     top: 0;
+  }
+  .dark header .nav .menu {
+    box-shadow: 0 2px 4px rgba(10, 10, 10, 0.3019607843);
   }
   header .nav .menu-toggle {
     display: flex;
