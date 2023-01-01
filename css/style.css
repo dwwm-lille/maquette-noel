@@ -439,7 +439,6 @@ footer .img2 {
   header .nav {
     height: 56px;
     margin: auto 24px;
-    /* @todo: close menu */
   }
   header .nav .menu {
     position: fixed;
