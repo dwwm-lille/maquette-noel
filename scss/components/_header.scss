@@ -9,19 +9,19 @@ header {
         align-items: center;
         column-gap: 48px;
         height: 80px;
-    
+
         .logo {
             display: flex;
             align-items: center;
             column-gap: 4px;
             color: $titleColor;
             font-weight: 500;
-    
+
             img {
                 width: 24px;
             }
         }
-    
+
         .menu {
             margin-left: auto;
             ul {
@@ -29,12 +29,12 @@ header {
                 column-gap: 48px;
                 row-gap: 24px;
                 align-items: center;
-        
+
                 a {
                     color: $titleColor;
                     font-weight: 500;
                     transition: 0.5s;
-        
+
                     &.active, &:hover {
                         color: $firstColor;
                     }
@@ -46,7 +46,7 @@ header {
             align-items: center;
             column-gap: 16px;
         }
-    
+
         .theme {
             display: flex;
             font-size: 20px;
