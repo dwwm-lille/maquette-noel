@@ -11,8 +11,7 @@
             /* @todo: close menu */
             .menu {
                 position: fixed;
-                flex-direction: column;
-                top: 0;
+                top: -100%;
                 left: 0;
                 background-color: #fff;
                 width: 100%;
@@ -20,10 +19,17 @@
                 box-shadow: 0 1px 4px #2825251a;
                 border-radius: 0 0 24px 24px;
                 transition: 0.5s;
-                display: none !important;
+
+                ul {
+                    flex-direction: column;
+                }
+
+                &.show {
+                    top: 0;
+                }
             }
 
-            .menu-toggle {
+            .menu-toggle, .menu-close, .nav-light {
                 display: block;
             }
         }

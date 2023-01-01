@@ -22,7 +22,7 @@ header {
             }
         }
     
-        .menu {
+        .menu ul {
             display: flex;
             column-gap: 48px;
             row-gap: 24px;
@@ -54,6 +54,24 @@ header {
             display: none;
             font-size: 20px;
             cursor: pointer;
+        }
+
+        .menu-close {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            display: none;
+            font-size: 32px;
+            cursor: pointer;
+        }
+
+        .nav-light {
+            display: none;
+            width: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotate(-15deg);
         }
     }
 }
