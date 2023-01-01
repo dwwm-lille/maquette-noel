@@ -3,19 +3,30 @@
         margin: auto 15px;
     }
 
-    /* @todo: close menu */
-    .menu {
-        position: fixed;
-        flex-direction: column;
-        top: 0;
-        left: 0;
-        background-color: #fff;
-        width: 100%;
-        padding: 64px 0;
-        box-shadow: 0 1px 4px #2825251a;
-        border-radius: 0 0 24px 24px;
-        transition: 0.5s;
-        display: none !important;
+    header {
+        .nav {
+            height: 56px;
+            margin: auto 24px;
+
+            /* @todo: close menu */
+            .menu {
+                position: fixed;
+                flex-direction: column;
+                top: 0;
+                left: 0;
+                background-color: #fff;
+                width: 100%;
+                padding: 64px 0;
+                box-shadow: 0 1px 4px #2825251a;
+                border-radius: 0 0 24px 24px;
+                transition: 0.5s;
+                display: none !important;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
     }
 
     .section {
@@ -27,7 +38,7 @@
     }
 
     .home {
-        padding-top: 12px;
+        padding-top: 80px;
 
         > .flex {
             flex-wrap: wrap;

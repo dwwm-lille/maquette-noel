@@ -61,47 +61,59 @@ button {
 }
 
 /* Header */
-.nav {
+header {
+  position: fixed;
+  width: 100%;
+}
+header .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   column-gap: 48px;
   height: 80px;
 }
-.nav .logo {
+header .nav .logo {
   display: flex;
   align-items: center;
   column-gap: 4px;
   color: #282525;
   font-weight: 500;
 }
-.nav .logo img {
+header .nav .logo img {
   width: 24px;
 }
-.nav .menu {
+header .nav .menu {
   display: flex;
   column-gap: 48px;
   row-gap: 24px;
   align-items: center;
   margin-left: auto;
 }
-.nav .menu a {
+header .nav .menu a {
   color: #282525;
   font-weight: 500;
   transition: 0.5s;
 }
-.nav .menu a.active, .nav .menu a:hover {
+header .nav .menu a.active, header .nav .menu a:hover {
   color: #dc3845;
 }
-.nav .theme {
-  display: flex;
+header .nav .nav-buttons {
+  align-items: center;
+  column-gap: 16px;
+}
+header .nav .theme {
+  font-size: 20px;
+  cursor: pointer;
+}
+header .nav .menu-toggle {
+  display: none;
   font-size: 20px;
   cursor: pointer;
 }
 
 /* Home section */
 .home {
-  padding-top: 48px;
+  padding-top: 128px;
 }
 .home > .flex.container {
   align-items: center;
@@ -121,9 +133,6 @@ button {
 }
 
 /* Giving section */
-.giving {
-  /* @todo: hover */
-}
 .giving > .flex {
   column-gap: 128px;
   row-gap: 40px;
@@ -143,6 +152,10 @@ button {
 }
 .giving img {
   width: 120px;
+  transition: 0.5s;
+}
+.giving img:hover {
+  transform: translateY(-4px);
 }
 
 /* Celebrate section */
@@ -162,9 +175,6 @@ button {
 }
 
 /* Gift section */
-.gift {
-  /* @todo: hover */
-}
 .gift > .flex {
   gap: 40px;
   flex-wrap: wrap;
@@ -186,6 +196,10 @@ button {
   width: 120px;
   margin-bottom: 16px;
   align-self: center;
+  transition: 0.5s;
+}
+.gift .card img:hover {
+  transform: translateY(-4px);
 }
 .gift .card .icon {
   position: absolute;
@@ -233,6 +247,10 @@ button {
   width: 150px;
   margin-bottom: 32px;
   position: relative;
+  transition: 0.5s;
+}
+.new .card img:hover {
+  transform: translateY(-4px);
 }
 .new .card .price {
   font-size: 20px;
@@ -397,8 +415,12 @@ footer .img2 {
   .container {
     margin: auto 15px;
   }
-  /* @todo: close menu */
-  .menu {
+  header .nav {
+    height: 56px;
+    margin: auto 24px;
+    /* @todo: close menu */
+  }
+  header .nav .menu {
     position: fixed;
     flex-direction: column;
     top: 0;
@@ -411,6 +433,9 @@ footer .img2 {
     transition: 0.5s;
     display: none !important;
   }
+  header .nav .menu-toggle {
+    display: block;
+  }
   .section {
     padding: 72px 0 16px 0;
   }
@@ -418,7 +443,7 @@ footer .img2 {
     font-size: 20px;
   }
   .home {
-    padding-top: 12px;
+    padding-top: 80px;
   }
   .home > .flex {
     flex-wrap: wrap;

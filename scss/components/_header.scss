@@ -1,44 +1,59 @@
 /* Header */
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 48px;
-    height: 80px;
+header {
+    position: fixed;
+    width: 100%;
 
-    .logo {
+    .nav {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        column-gap: 4px;
-        color: $titleColor;
-        font-weight: 500;
-
-        img {
-            width: 24px;
-        }
-    }
-
-    .menu {
-        display: flex;
         column-gap: 48px;
-        row-gap: 24px;
-        align-items: center;
-        margin-left: auto;
-
-        a {
+        height: 80px;
+    
+        .logo {
+            display: flex;
+            align-items: center;
+            column-gap: 4px;
             color: $titleColor;
             font-weight: 500;
-            transition: 0.5s;
-
-            &.active, &:hover {
-                color: $firstColor;
+    
+            img {
+                width: 24px;
             }
         }
-    }
+    
+        .menu {
+            display: flex;
+            column-gap: 48px;
+            row-gap: 24px;
+            align-items: center;
+            margin-left: auto;
+    
+            a {
+                color: $titleColor;
+                font-weight: 500;
+                transition: 0.5s;
+    
+                &.active, &:hover {
+                    color: $firstColor;
+                }
+            }
+        }
 
-    .theme {
-        display: flex;
-        font-size: 20px;
-        cursor: pointer;
+        .nav-buttons {
+            align-items: center;
+            column-gap: 16px;
+        }
+    
+        .theme {
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
     }
 }
