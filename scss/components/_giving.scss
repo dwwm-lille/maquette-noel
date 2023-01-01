@@ -7,7 +7,6 @@
         padding-top: 32px;
     }
 
-    /* @todo: hover */
     .item {
         width: 200px;
         text-align: center;
@@ -24,5 +23,10 @@
 
     img {
         width: 120px;
+        transition: 0.5s;
+
+        &:hover{
+            transform: translateY(-4px);
+        }
     }
 }

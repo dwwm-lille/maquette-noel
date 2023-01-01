@@ -8,7 +8,6 @@
         padding-top: 32px;
     }
 
-    /* @todo: hover */
     .card {
         width: 200px;
         box-shadow: 0 4px 16px #301d1e1a;
@@ -23,6 +22,11 @@
             width: 120px;
             margin-bottom: 16px;
             align-self: center;
+            transition: 0.5s;
+
+            &:hover{
+                transform: translateY(-4px);
+            }
         }
 
         .icon {
