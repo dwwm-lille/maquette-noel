@@ -1,7 +1,6 @@
 /* Scroll */
 .scrollup {
     position: fixed;
-    bottom: 48px;
     right: 48px;
     box-shadow: 0 4px 12px #3333331a;
     display: inline-flex;
@@ -10,6 +9,11 @@
     background-color: #fff;
     opacity: 0.8;
     transition: 0.5s;
+    bottom: -48px;
+
+    &.show {
+        bottom: 48px;
+    }
 
     &:hover {
         opacity: 1;

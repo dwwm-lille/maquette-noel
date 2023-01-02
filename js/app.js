@@ -59,6 +59,17 @@ messageButton.addEventListener('click', (e) => {
     }
 });
 
+// Scroll up
+window.addEventListener('scroll', () => {
+    const scrollup = document.querySelector('.scrollup');
+
+    if (window.scrollY >= 300) {
+        scrollup.classList.add('show');
+    } else {
+        scrollup.classList.remove('show');
+    }
+});
+
 // Show/hide menu
 const navMenu = document.querySelector('.menu');
 const navToggle = document.querySelector('.menu-toggle');
