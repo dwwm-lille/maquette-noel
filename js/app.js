@@ -70,6 +70,24 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Scroll active
+const sections = document.querySelectorAll('section[id]');
+
+window.addEventListener('scroll', () => {
+    // On va parcourir chaque section pour voir si le scroll est "dessus"
+    sections.forEach((section) => {
+        let scrollY = window.pageYOffset; // Position du scroll
+        let top = section.offsetTop - 60; // Position de la zone haute de la section par rapport à la page
+        let height = section.offsetHeight; // Hauteur de la section
+
+        if (scrollY > top && scrollY <= top + height) {
+            document.querySelector('.menu a[href*=' + section.id + ']').classList.add('active');
+        } else {
+            document.querySelector('.menu a[href*=' + section.id + ']').classList.remove('active');
+        }
+    });
+});
+
 // Show/hide menu
 const navMenu = document.querySelector('.menu');
 const navToggle = document.querySelector('.menu-toggle');
