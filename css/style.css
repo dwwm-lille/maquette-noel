@@ -5,6 +5,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   color: #5d5656;
@@ -323,6 +327,10 @@ header .nav .nav-light {
   display: block;
   margin-bottom: 16px;
 }
+.message .error {
+  color: #fff;
+  margin-bottom: 20px;
+}
 .message .button {
   display: inline-block;
   background-color: #282525;
@@ -475,6 +483,9 @@ body.dark .message > .flex {
 }
 body.dark .message input {
   background-color: #251819;
+  color: #c2bdbd;
+}
+body.dark .message .error {
   color: #c2bdbd;
 }
 body.dark .message .button {

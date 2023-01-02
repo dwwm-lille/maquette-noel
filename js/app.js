@@ -24,6 +24,41 @@ themeButton.addEventListener('click', () => {
     themeButton.classList.toggle('bx-sun');
 });
 
+// Message
+const messageButton = document.querySelector('.message .button');
+const messageImage = document.querySelector('.message img');
+const messageInput = document.querySelector('.message input');
+const messageTitle = document.querySelector('.message .title');
+const messageError = document.querySelector('.message .error');
+
+messageButton.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    if (messageInput.value.length > 0) {
+        messageImage.style.display = 'none';
+        messageInput.style.display = 'none';
+        e.target.style.display = 'none';
+
+        messageTitle.innerHTML = messageInput.value;
+
+        setTimeout(() => {
+            messageImage.style.display = 'block';
+            messageInput.style.display = 'block';
+            e.target.style.display = 'block';
+
+            messageTitle.innerHTML = 'Envoyer de bons <br> voeux!';
+        }, 5000);
+    } else {
+        messageError.innerHTML = 'Le message est vide...';
+        messageError.style.display = 'block';
+
+        setTimeout(() => {
+            messageError.innerHTML = '';
+            messageError.style.display = 'none';
+        }, 5000);
+    }
+});
+
 // Show/hide menu
 const navMenu = document.querySelector('.menu');
 const navToggle = document.querySelector('.menu-toggle');

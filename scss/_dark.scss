@@ -43,6 +43,10 @@ body.dark {
         color: $darkTextColor;
     }
 
+    .message .error {
+        color: $darkTextColor;
+    }
+
     .message .button {
         @include button();
     }

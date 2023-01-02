@@ -27,6 +27,11 @@
         margin-bottom: 16px;
     }
 
+    .error {
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
     .button {
         @include button($titleColor);
     }
