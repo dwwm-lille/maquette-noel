@@ -88,6 +88,23 @@ window.addEventListener('scroll', () => {
     });
 });
 
+// Swiper
+new Swiper('.swiper', {
+    slidesPerView: 'auto',
+    loop: true,
+    spaceBetween: 24,
+    centeredSlides: true,
+    pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+    },
+    breakpoints: {
+        768: {
+          spaceBetween: 80,
+        },
+    },
+});
+
 // Show/hide menu
 const navMenu = document.querySelector('.menu');
 const navToggle = document.querySelector('.menu-toggle');

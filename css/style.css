@@ -71,7 +71,7 @@ header {
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(8px);
   transition: 0.5s;
-  z-index: 1;
+  z-index: 2;
 }
 header.shadow {
   box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1019607843);
@@ -248,12 +248,15 @@ header .nav .nav-light {
 }
 
 /* New section */
-.new > .flex {
-  gap: 80px;
-  flex-wrap: wrap;
+.new .swiper .swiper-wrapper {
   max-width: 850px;
-  margin: auto;
   padding-top: 32px;
+}
+.new .swiper-pagination-bullet {
+  background-color: #5d5656;
+}
+.new .swiper-pagination-bullet-active {
+  background-color: #dc3845;
 }
 .new .card {
   width: 230px;
@@ -263,6 +266,7 @@ header .nav .nav-light {
   padding: 16px 16px 24px 16px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 80px;
 }
 .new .card .overlay {
   width: 250px;
