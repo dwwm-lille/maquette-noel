@@ -12,6 +12,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   color: #5d5656;
+  transition: 0.5s;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -95,6 +96,7 @@ header .nav .logo img {
 }
 header .nav .menu {
   margin-left: auto;
+  transition: 0.5s;
 }
 header .nav .menu ul {
   display: flex;
@@ -248,7 +250,7 @@ header .nav .nav-light {
 }
 
 /* New section */
-.new .swiper .swiper-wrapper {
+.new .swiper {
   max-width: 850px;
   padding-top: 32px;
 }
@@ -470,9 +472,6 @@ body.dark header {
 body.dark header nav .logo {
   color: #f3f2f2;
 }
-body.dark header nav .menu {
-  background-color: #251819;
-}
 body.dark header nav .menu ul a {
   color: #f3f2f2;
 }
@@ -520,6 +519,7 @@ body.dark footer .links a {
   }
   header {
     backdrop-filter: unset;
+    background-color: rgb(255, 255, 255);
   }
   header .nav {
     height: 56px;
@@ -688,6 +688,9 @@ body.dark footer .links a {
   }
   .scrollup {
     right: 24px;
+  }
+  .dark nav .menu {
+    background-color: #251819;
   }
 }
 

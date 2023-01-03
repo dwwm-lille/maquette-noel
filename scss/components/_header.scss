@@ -32,6 +32,8 @@ header {
 
         .menu {
             margin-left: auto;
+            transition: 0.5s;
+
             ul {
                 display: flex;
                 column-gap: 48px;

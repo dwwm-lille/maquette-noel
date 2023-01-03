@@ -1,15 +1,15 @@
 /* New section */
 .new {
-    .swiper .swiper-wrapper {
+    .swiper {
         max-width: 850px;
         padding-top: 32px;
     }
 
-    .swiper-pagination-bullet{
+    .swiper-pagination-bullet {
         background-color: $textColor;
     }
     
-    .swiper-pagination-bullet-active{
+    .swiper-pagination-bullet-active {
         background-color: $firstColor;
     }
 
@@ -39,7 +39,7 @@
             position: relative;
             transition: 0.5s;
 
-            &:hover{
+            &:hover {
                 transform: translateY(-4px);
             }
         }

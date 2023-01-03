@@ -24,7 +24,7 @@
             align-self: center;
             transition: 0.5s;
 
-            &:hover{
+            &:hover {
                 transform: translateY(-4px);
             }
         }
@@ -42,7 +42,7 @@
             font-size: 20px;
         }
 
-        &-title {
+        &-title { // .card .card-title
             font-size: 14px;
             font-weight: 500;
         }

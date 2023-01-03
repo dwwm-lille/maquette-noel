@@ -1,7 +1,7 @@
 // Shadow menu
-window.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
+const header = document.querySelector('header');
 
+window.addEventListener('scroll', () => {
     if (window.scrollY >= 50) {
         header.classList.add('shadow');
     } else {
@@ -30,23 +30,24 @@ const messageImage = document.querySelector('.message img');
 const messageInput = document.querySelector('.message input');
 const messageTitle = document.querySelector('.message .title');
 const messageError = document.querySelector('.message .error');
+const oldTitle = messageTitle.innerHTML;
 
 messageButton.addEventListener('click', (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Annule l'envoi formulaire
 
     if (messageInput.value.length > 0) {
         messageImage.style.display = 'none';
         messageInput.style.display = 'none';
-        e.target.style.display = 'none';
+        messageButton.style.display = 'none';
 
-        messageTitle.innerHTML = messageInput.value;
+        messageTitle.textContent = messageInput.value;
 
         setTimeout(() => {
             messageImage.style.display = 'block';
             messageInput.style.display = 'block';
-            e.target.style.display = 'block';
+            messageButton.style.display = 'block';
 
-            messageTitle.innerHTML = 'Envoyer de bons <br> voeux!';
+            messageTitle.innerHTML = oldTitle;
         }, 5000);
     } else {
         messageError.innerHTML = 'Le message est vide...';
@@ -60,9 +61,9 @@ messageButton.addEventListener('click', (e) => {
 });
 
 // Scroll up
-window.addEventListener('scroll', () => {
-    const scrollup = document.querySelector('.scrollup');
+const scrollup = document.querySelector('.scrollup');
 
+window.addEventListener('scroll', () => {
     if (window.scrollY >= 300) {
         scrollup.classList.add('show');
     } else {
@@ -76,9 +77,11 @@ const sections = document.querySelectorAll('section[id]');
 window.addEventListener('scroll', () => {
     // On va parcourir chaque section pour voir si le scroll est "dessus"
     sections.forEach((section) => {
-        let scrollY = window.pageYOffset; // Position du scroll
+        let scrollY = window.scrollY; // Position du scroll
         let top = section.offsetTop - 60; // Position de la zone haute de la section par rapport à la page
         let height = section.offsetHeight; // Hauteur de la section
+
+        // console.log(section.id, top, top + height, scrollY);
 
         if (scrollY > top && scrollY <= top + height) {
             document.querySelector('.menu a[href*=' + section.id + ']').classList.add('active');
@@ -98,9 +101,12 @@ new Swiper('.swiper', {
         el: '.swiper-pagination',
         dynamicBullets: true,
     },
+
+    // Bureau (min-width)
     breakpoints: {
         768: {
-          spaceBetween: 80,
+            slidesPerView: 3,
+            spaceBetween: 80,
         },
     },
 });
