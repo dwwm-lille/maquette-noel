@@ -137,6 +137,26 @@ button.addEventListener('click', () => {
         .start();
 });
 
+let gifts = [
+    { name: 'Pain d\'épice', price: 15, image: 'img/gift1.png' },
+    { name: 'Chapeau de Père Noël', price: 22, image: 'img/gift2.png' },
+    { name: 'Sapin de Noël', price: 48, image: 'img/gift3.png' },
+    { name: 'Bonhomme de neige', price: 35, image: 'img/gift4.png' },
+    { name: 'Bâton de bonbon', price: 12, image: 'img/gift5.png' },
+];
+
+const giftList = document.querySelector('#gift-list');
+
+gifts.forEach((gift) => {
+    giftList.innerHTML += `<article class="card">
+        <img src="${gift.image}" alt="${gift.name}">
+        <i class="bx bx-heart icon"></i>
+
+        <h3 class="price">${gift.price} €</h3>
+        <span class="card-title">${gift.name}</span>
+    </article>`;
+});
+
 // Show/hide menu
 const navMenu = document.querySelector('.menu');
 const navToggle = document.querySelector('.menu-toggle');
