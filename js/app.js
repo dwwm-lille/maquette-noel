@@ -111,6 +111,32 @@ new Swiper('.swiper', {
     },
 });
 
+// Scroll reveal
+const sr = ScrollReveal({ reset: true, distance: '-50px' });
+
+sr.reveal('.giving > .title', { delay: 500 });
+sr.reveal('.giving .item:first-child', { delay: 1000, distance: '100px', origin: 'left' });
+sr.reveal('.giving .item:nth-child(2)', { delay: 1500, distance: '100px' });
+sr.reveal('.giving .item:last-child', { delay: 2000, distance: '100px', origin: 'right' });
+
+// Typewriter
+const mainTitle = document.querySelector('h1');
+const button = document.querySelector('.home .button');
+
+button.addEventListener('click', () => {
+    let typewriter = new Typewriter(mainTitle, { loop: true });
+
+    typewriter.typeString('Joyeux Noël !')
+        .pauseFor(1000)
+        .deleteAll()
+        .typeString('Bonne année !')
+        .pauseFor(1000)
+        .deleteChars(7)
+        .typeString('santé !')
+        .pauseFor(1000)
+        .start();
+});
+
 // Show/hide menu
 const navMenu = document.querySelector('.menu');
 const navToggle = document.querySelector('.menu-toggle');
